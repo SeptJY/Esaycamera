@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  Esaycamera
+
+  Created by Sept on 16/3/31.
+  Copyright © 2016年 九月. All rights reserved.
+*/
+
+"设置" = "Setup";
+"白平衡" = "WB";
+"曝光" = "Exposure";
+
+"色调" = "Tint";
+"色温" = "Temp";
+"色   温" = "Temp";
+"色   调" = "Tint";
+"色温" = "色温";
+"饱 和 度" = "Saturation";
+
+"曝光偏移" = "Offset";
+"曝光时间" = "Time";
+"感光度" = "ISO";
+"曝光补偿" = "Bias";
+
+"  蓝   牙" = "Bluetooth";
+"摄像头" = "Position";
+"闪光灯" = "Flash";
+"九宫格" = "Grid";
+"  语   言" = "Language";
+"  分辨率 " = "Resolution";
+"透明度" = "Opacity";
+"取消" = "Cancle";
+"保存成功" = "Save success";
+"低等" = "Lower";
+"保存成功" = "Save success";
+"保存失败" = "Save failed";
+"正在保存..." = "Saving...";
+"默认" = "Default";
+"1920x1080    默认" = "1920x1080    Default";
+"3840x2160    仅支持iPhone6及以上设备" = "3840x2160    Support only iPhone6 and above equipment";
+"仅支持iPhone6及以上设备" = "Support only iPhone6 and above equipment";
+"返回" = "Back";
+"未连接" = "Not connected";
+"蓝牙连接中断" = "Bluetooth connection interrupt";
+"连接成功" = "Successful Connection";
+"锁定" = "Locking";
+"简体中文" = "Chinese";
+"恢复默认设置" = "Restore Defaults";
+"英文" = "English";
+"对比度" = "Contrast";
+"手轮方向" = "Direction";
+"硬件支持" = "Support";
+"附加镜头" = "Lens";
+"自动" = "Auto";
+"手动" = "M";
+"正" = "Positive";
+"反" = "Negative";
+"无线跟焦器" = "Wireless and focal device";
+"硬件版本:" = "Hardware:";

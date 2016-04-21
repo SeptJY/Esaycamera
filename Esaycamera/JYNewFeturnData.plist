@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>img</key>
+			<string>about_app_icon.png</string>
+			<key>title</key>
+			<string></string>
+			<key>desc</key>
+			<string>透过小小的镜头，触摸光阴的足迹</string>
+			<key>bg</key>
+			<string>intro_1-min.png</string>
+		</dict>
+		<dict>
+			<key>img</key>
+			<string>intro_speedpages.png</string>
+			<key>title</key>
+			<string>有了你</string>
+			<key>desc</key>
+			<string>视界变得更加美好</string>
+			<key>bg</key>
+			<string>intro_2-min.png</string>
+		</dict>
+		<dict>
+			<key>img</key>
+			<string>intro_speedcast.png</string>
+			<key>title</key>
+			<string>发现美</string>
+			<key>desc</key>
+			<string>捕捉美丽瞬间，留住最美时刻</string>
+			<key>bg</key>
+			<string>intro_3-min.png</string>
+		</dict>
+		<dict>
+			<key>img</key>
+			<string>intro_analyze.png</string>
+			<key>title</key>
+			<string>了解&apos;视&apos;界</string>
+			<key>desc</key>
+			<string>贴近世界的视角，自然清晰</string>
+			<key>bg</key>
+			<string>intro_4-min.png</string>
+		</dict>
+		<dict>
+			<key>img</key>
+			<string>intro_speedchat.png</string>
+			<key>title</key>
+			<string>用心感受</string>
+			<key>desc</key>
+			<string>拉近美与现实的距离</string>
+			<key>bg</key>
+			<string>intro_5-min.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

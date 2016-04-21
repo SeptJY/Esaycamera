@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JYTabBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfm-Tb-ymm">
+                    <rect key="frame" x="58" y="0.0" width="50" height="44"/>
+                    <state key="normal" image="web_view_right"/>
+                    <connections>
+                        <action selector="tabBarBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="icM-cT-52Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-zz-At9">
+                    <rect key="frame" x="116" y="0.0" width="50" height="44"/>
+                    <connections>
+                        <action selector="tabBarBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ev4-v9-lQd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9n-AR-V9A">
+                    <rect key="frame" x="270" y="0.0" width="50" height="44"/>
+                    <state key="normal" image="web_view_error"/>
+                    <connections>
+                        <action selector="tabBarBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="vIB-OK-i7f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqm-QQ-vYQ">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="ScP-5y-1sB"/>
+                    </constraints>
+                    <state key="normal" image="web_view_left"/>
+                    <connections>
+                        <action selector="tabBarBtnOnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="H06-R8-EBy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="u9n-AR-V9A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="38E-p3-aHr"/>
+                <constraint firstItem="u9n-AR-V9A" firstAttribute="width" secondItem="e5n-zz-At9" secondAttribute="width" id="4Al-yB-kdA"/>
+                <constraint firstItem="e5n-zz-At9" firstAttribute="leading" secondItem="qfm-Tb-ymm" secondAttribute="trailing" constant="8" id="9tS-Bm-WFQ"/>
+                <constraint firstAttribute="bottom" secondItem="u9n-AR-V9A" secondAttribute="bottom" id="PMg-YY-U5y"/>
+                <constraint firstItem="e5n-zz-At9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qow-Ph-xdN"/>
+                <constraint firstItem="qfm-Tb-ymm" firstAttribute="width" secondItem="Qqm-QQ-vYQ" secondAttribute="width" id="WUn-Bn-cPY"/>
+                <constraint firstItem="Qqm-QQ-vYQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a1I-NL-MIT"/>
+                <constraint firstAttribute="trailing" secondItem="u9n-AR-V9A" secondAttribute="trailing" id="del-ei-1UY"/>
+                <constraint firstAttribute="bottom" secondItem="e5n-zz-At9" secondAttribute="bottom" id="ffn-pn-bcS"/>
+                <constraint firstItem="e5n-zz-At9" firstAttribute="width" secondItem="qfm-Tb-ymm" secondAttribute="width" id="gxL-aX-Nuu"/>
+                <constraint firstItem="qfm-Tb-ymm" firstAttribute="leading" secondItem="Qqm-QQ-vYQ" secondAttribute="trailing" constant="8" id="oyV-Hp-g3E"/>
+                <constraint firstAttribute="bottom" secondItem="Qqm-QQ-vYQ" secondAttribute="bottom" id="rP5-Im-nMO"/>
+                <constraint firstAttribute="bottom" secondItem="qfm-Tb-ymm" secondAttribute="bottom" id="twc-qR-4CC"/>
+                <constraint firstItem="qfm-Tb-ymm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xn7-5u-PjY"/>
+                <constraint firstItem="Qqm-QQ-vYQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yNY-so-xNC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="qfm-Tb-ymm" id="NxV-xr-b0e"/>
+                <outlet property="forwardBtn" destination="Qqm-QQ-vYQ" id="Vy1-fN-sfb"/>
+                <outlet property="refeshBtn" destination="e5n-zz-At9" id="Mf1-mC-VCE"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="353"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="web_view_error" width="24" height="24"/>
+        <image name="web_view_left" width="15" height="24"/>
+        <image name="web_view_right" width="15" height="24"/>
+    </resources>
+</document>

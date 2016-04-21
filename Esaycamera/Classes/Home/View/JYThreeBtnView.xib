@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TFw-47-Q9F" customClass="JYThreeBtnView">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98I-pA-M61">
+                    <rect key="frame" x="0.0" y="0.0" width="518" height="2"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="kVf-KR-YGm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyb-rn-9Xf">
+                    <rect key="frame" x="0.0" y="2" width="2" height="104"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d8-Bh-oiR">
+                    <rect key="frame" x="0.0" y="106" width="518" height="2"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wos-p1-QAk">
+                    <rect key="frame" x="516" y="2" width="2" height="104"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="Nvv-TS-VBf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-1i-GAY">
+                    <rect key="frame" x="2" y="2" width="170" height="104"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="设置">
+                        <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="threeViewButtonOnClick:" destination="TFw-47-Q9F" eventType="touchUpInside" id="ln4-Hg-OkG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5j-Nl-w5d">
+                    <rect key="frame" x="346" y="2" width="170" height="104"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="曝光">
+                        <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="threeViewButtonOnClick:" destination="TFw-47-Q9F" eventType="touchUpInside" id="TCC-K6-Rdw"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcS-zw-hHt">
+                    <rect key="frame" x="172" y="2" width="2" height="104"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvF-W5-LJk">
+                    <rect key="frame" x="344" y="2" width="2" height="104"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwe-iQ-7io">
+                    <rect key="frame" x="174" y="2" width="170" height="104"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="白平衡">
+                        <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="threeViewButtonOnClick:" destination="TFw-47-Q9F" eventType="touchUpInside" id="LJa-97-VfA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3d8-Bh-oiR" secondAttribute="trailing" id="07l-G6-cJS"/>
+                <constraint firstItem="Wos-p1-QAk" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="1RR-aT-Ydf"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="Wos-p1-QAk" secondAttribute="bottom" id="1nx-j7-0iM"/>
+                <constraint firstItem="xyb-rn-9Xf" firstAttribute="leading" secondItem="TFw-47-Q9F" secondAttribute="leading" id="57r-67-FWE"/>
+                <constraint firstItem="bvF-W5-LJk" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="5I4-vW-g9J"/>
+                <constraint firstItem="98I-pA-M61" firstAttribute="leading" secondItem="TFw-47-Q9F" secondAttribute="leading" id="7jn-Tb-zTZ"/>
+                <constraint firstItem="Kwe-iQ-7io" firstAttribute="leading" secondItem="tuQ-1i-GAY" secondAttribute="trailing" constant="2" id="9AH-MN-URF"/>
+                <constraint firstItem="V5j-Nl-w5d" firstAttribute="leading" secondItem="Kwe-iQ-7io" secondAttribute="trailing" constant="2" id="A8K-O1-ss9"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="tuQ-1i-GAY" secondAttribute="bottom" id="Brz-WP-6WI"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="wcS-zw-hHt" secondAttribute="bottom" id="D98-3f-ir1"/>
+                <constraint firstItem="wcS-zw-hHt" firstAttribute="leading" secondItem="tuQ-1i-GAY" secondAttribute="trailing" id="DLz-hE-sHm"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="V5j-Nl-w5d" secondAttribute="bottom" id="FHL-gI-QCv"/>
+                <constraint firstItem="wcS-zw-hHt" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="G2p-BN-oFF"/>
+                <constraint firstItem="Wos-p1-QAk" firstAttribute="width" secondItem="xyb-rn-9Xf" secondAttribute="width" id="JRe-5Z-pfx"/>
+                <constraint firstItem="98I-pA-M61" firstAttribute="top" secondItem="TFw-47-Q9F" secondAttribute="top" id="PDJ-WT-5Mi"/>
+                <constraint firstItem="V5j-Nl-w5d" firstAttribute="height" secondItem="tuQ-1i-GAY" secondAttribute="height" id="Pom-ze-iUP"/>
+                <constraint firstItem="V5j-Nl-w5d" firstAttribute="leading" secondItem="bvF-W5-LJk" secondAttribute="trailing" id="RH8-pu-6aI"/>
+                <constraint firstItem="bvF-W5-LJk" firstAttribute="leading" secondItem="Kwe-iQ-7io" secondAttribute="trailing" id="Sqv-gm-w1U"/>
+                <constraint firstItem="Kwe-iQ-7io" firstAttribute="leading" secondItem="wcS-zw-hHt" secondAttribute="trailing" id="Tpc-tG-jPd"/>
+                <constraint firstAttribute="trailing" secondItem="98I-pA-M61" secondAttribute="trailing" id="UdV-k2-8ug"/>
+                <constraint firstAttribute="trailing" secondItem="Wos-p1-QAk" secondAttribute="trailing" id="UvT-Cq-UGw"/>
+                <constraint firstItem="Kwe-iQ-7io" firstAttribute="centerY" secondItem="tuQ-1i-GAY" secondAttribute="centerY" id="VCe-H8-OnQ"/>
+                <constraint firstItem="V5j-Nl-w5d" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="YEQ-bW-wgA"/>
+                <constraint firstItem="V5j-Nl-w5d" firstAttribute="width" secondItem="tuQ-1i-GAY" secondAttribute="width" id="aEF-sR-LGn"/>
+                <constraint firstItem="Kwe-iQ-7io" firstAttribute="width" secondItem="tuQ-1i-GAY" secondAttribute="width" id="aWa-Qe-wNZ"/>
+                <constraint firstAttribute="bottom" secondItem="3d8-Bh-oiR" secondAttribute="bottom" id="aan-pX-U12"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="height" secondItem="98I-pA-M61" secondAttribute="height" id="cZY-m2-GP8"/>
+                <constraint firstItem="Kwe-iQ-7io" firstAttribute="height" secondItem="tuQ-1i-GAY" secondAttribute="height" id="mZY-XI-sAg"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="bvF-W5-LJk" secondAttribute="bottom" id="nMK-8t-dd9"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="top" secondItem="xyb-rn-9Xf" secondAttribute="bottom" id="nzO-Au-XVA"/>
+                <constraint firstItem="Wos-p1-QAk" firstAttribute="leading" secondItem="V5j-Nl-w5d" secondAttribute="trailing" id="o1f-wU-EpU"/>
+                <constraint firstItem="xyb-rn-9Xf" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="oLm-dO-Vhd"/>
+                <constraint firstItem="tuQ-1i-GAY" firstAttribute="top" secondItem="98I-pA-M61" secondAttribute="bottom" id="wng-xA-vRY"/>
+                <constraint firstItem="3d8-Bh-oiR" firstAttribute="leading" secondItem="TFw-47-Q9F" secondAttribute="leading" id="yQ9-Rp-U4h"/>
+                <constraint firstItem="tuQ-1i-GAY" firstAttribute="leading" secondItem="xyb-rn-9Xf" secondAttribute="trailing" id="zgp-RE-2mP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="balanceBtn" destination="Kwe-iQ-7io" id="9Wb-hE-tI2"/>
+                <outlet property="exposureBtn" destination="V5j-Nl-w5d" id="EdT-Ld-eO0"/>
+                <outlet property="settingBtn" destination="tuQ-1i-GAY" id="Tni-6X-M6R"/>
+            </connections>
+            <point key="canvasLocation" x="357" y="362"/>
+        </view>
+    </objects>
+</document>
