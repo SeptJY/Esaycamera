@@ -60,8 +60,8 @@ static void *IMAGE_ICONS = &IMAGE_ICONS;
         _videoBtn = [[UIButton alloc] init];
         
 //        _videoBtn.backgroundColor = [UIColor yellowColor];
-        [_videoBtn setImage:[UIImage imageNamed:@"home_vedioing_click_icon"] forState:UIControlStateNormal];
-        [_videoBtn setImage:[UIImage imageNamed:@"record"] forState:UIControlStateSelected];
+        [_videoBtn setImage:[UIImage imageNamed:@"record"] forState:UIControlStateNormal];
+        [_videoBtn setImage:[UIImage imageNamed:@"record_on"] forState:UIControlStateSelected];
         _videoBtn.adjustsImageWhenHighlighted = NO;
         _videoBtn.tag = 21;
         _videoBtn.alpha = 0.7;

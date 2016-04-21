@@ -233,7 +233,7 @@
 {
     if (!_iFocusView) {
         
-        _iFocusView = [self createImageViewWithImage:@"home_i_rule_view_icon"];
+        _iFocusView = [self createImageViewWithImage:@"keduchi"];
     }
     return _iFocusView;
 }
@@ -242,7 +242,7 @@
 {
     if (!_iZoomView) {
         
-        _iZoomView = [self createImageViewWithImage:@"home_dz_rule_icon"];
+        _iZoomView = [self createImageViewWithImage:@"zoom_kefuchi"];
         _iZoomView.hidden = YES;
     }
     return _iZoomView;
