@@ -516,9 +516,8 @@
                         self.iFocusView.transform = CGAffineTransformMakeTranslation(0, self.focusNum);
                     }];
                 });
-                
                 // 30是showView的高度   -- 调节微距
-                [self.videoCamera cameraManagerChangeFoucus:(1 - (-self.blueManager.moveDistance + SHOW_Y) / (screenH - 30))];
+                [self.videoCamera cameraManagerChangeFoucus:(1 - (-self.iFocusView.y + SHOW_Y) / (screenH - 30))];
                 // 3.保存最后一次的移动距离
                 self.saveFocusNum = self.blueManager.moveDistance;
             }
@@ -533,7 +532,7 @@
                         self.iZoomView.transform = CGAffineTransformMakeTranslation(0, self.zoomNum);
                     }];
                 });
-                [self.videoCamera cameraManagerVideoZoom:(-self.blueManager.videoZoom + SHOW_Y) / (screenH - 30)];
+                [self.videoCamera cameraManagerVideoZoom:(-self.iZoomView.y + SHOW_Y) / (screenH - 30)];
                 self.saveVideoZoom = self.blueManager.videoZoom;
             }
         }
@@ -553,9 +552,11 @@
     }
     if (qubie == 1) {
         self.blueManager.moveDistance = type;
+        NSLog(@"moveDistance = %f", self.blueManager.moveDistance);
     } else
     {
         self.blueManager.videoZoom = type;
+        NSLog(@"videoZoom = %f", self.blueManager.videoZoom);
     }
     CGFloat realNum = type + num;
     
@@ -564,6 +565,14 @@
 
 - (void)ruleImageWithFoucus
 {
+    if (self.blueManager.moveDistance <= 0) {
+        self.blueManager.moveDistance = 0;
+    }
+    if (self.blueManager.moveDistance >= 2 * SHOW_Y) {
+        self.blueManager.moveDistance = 2 * SHOW_Y;
+    }
+    self.focusNum = self.blueManager.moveDistance - SHOW_Y;
+    
     // 1.刷新对焦刻度尺的y坐标
     dispatch_async(dispatch_get_main_queue(), ^{
         
@@ -1329,9 +1338,12 @@ static const float kExposureDurationPower = 5;
     self.infoView.image = @"home_core_blue_error";
     self.infoView.raNum = 10.0;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        
+        if (self.blueManager.connectPeripheral == nil)
+        {
+            self.infoView.image = @"home_core_blue_disconnect";
+        }
     });
 }
 
@@ -1407,7 +1419,7 @@ static const float kExposureDurationPower = 5;
         
         // Add code to clean up other strong references to the view in
         // the view hierarchy.
-        self.view = nil;// 目的是再次进入时能够重新加载调用viewDidLoad函数。
+//        self.view = nil;// 目的是再次进入时能够重新加载调用viewDidLoad函数。
     }
     
     NSLog(@"%s", __func__);
