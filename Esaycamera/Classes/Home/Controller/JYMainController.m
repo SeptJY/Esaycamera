@@ -233,7 +233,7 @@
 {
     if (!_iFocusView) {
         
-        _iFocusView = [self createImageViewWithImage:@"keduchi"];
+        _iFocusView = [self createImageViewWithImage:@"home_i_rule_view_icon"];
     }
     return _iFocusView;
 }
@@ -242,7 +242,7 @@
 {
     if (!_iZoomView) {
         
-        _iZoomView = [self createImageViewWithImage:@"zoom_kefuchi"];
+        _iZoomView = [self createImageViewWithImage:@"home_dz_rule_icon"];
         _iZoomView.hidden = YES;
     }
     return _iZoomView;
@@ -552,11 +552,11 @@
     }
     if (qubie == 1) {
         self.blueManager.moveDistance = type;
-        NSLog(@"moveDistance = %f", self.blueManager.moveDistance);
+//        NSLog(@"moveDistance = %f", self.blueManager.moveDistance);
     } else
     {
         self.blueManager.videoZoom = type;
-        NSLog(@"videoZoom = %f", self.blueManager.videoZoom);
+//        NSLog(@"videoZoom = %f", self.blueManager.videoZoom);
     }
     CGFloat realNum = type + num;
     
@@ -565,13 +565,13 @@
 
 - (void)ruleImageWithFoucus
 {
-    if (self.blueManager.moveDistance <= 0) {
-        self.blueManager.moveDistance = 0;
-    }
-    if (self.blueManager.moveDistance >= 2 * SHOW_Y) {
-        self.blueManager.moveDistance = 2 * SHOW_Y;
-    }
-    self.focusNum = self.blueManager.moveDistance - SHOW_Y;
+//    if (self.blueManager.moveDistance <= 0) {
+//        self.blueManager.moveDistance = 0;
+//    }
+//    if (self.blueManager.moveDistance >= 2 * SHOW_Y) {
+//        self.blueManager.moveDistance = 2 * SHOW_Y;
+//    }
+//    self.focusNum = self.blueManager.moveDistance - SHOW_Y;
     
     // 1.刷新对焦刻度尺的y坐标
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -607,6 +607,14 @@
 
 - (void)ruleImageWithZoom
 {
+//    if (self.blueManager.videoZoom <= 0) {
+//        self.blueManager.videoZoom = 0;
+//    }
+//    if (self.blueManager.videoZoom >= 2 * SHOW_Y) {
+//        self.blueManager.videoZoom = 2 * SHOW_Y;
+//    }
+//    self.zoomNum = self.blueManager.videoZoom - 0;
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:AnimationTime/1000 animations:^{
             self.iZoomView.transform = CGAffineTransformMakeTranslation(0, self.zoomNum);
@@ -1085,10 +1093,12 @@ static const float kExposureDurationPower = 5;
             case 80:      // 默认
                 self.infoView.dzText = @"x1";
                 self.blueManager.managerLens = JYBlueManagerLensOne;
+                self.iFocusView.image = [UIImage imageNamed:@"home_i_rule_view_icon"];
                 break;
             case 81:      // 2倍增距镜
                 self.infoView.dzText = @"x2";
                 self.blueManager.managerLens = JYBlueManagerLensTwo;
+                self.iFocusView.image = [UIImage imageNamed:@"keduchi"];
                 break;
             case 82:      // 3倍增距镜
                 self.infoView.dzText = @"x3";

@@ -474,7 +474,7 @@ static void * MINUS_ZOOM_MINUS = &MINUS_ZOOM_MINUS;
             }
             break;
             
-        case 512:   // 查询镜头倍率
+        case 512:   // 重复最后一次
             switch (self.videoType) {
                 case JYResetVideoTypeOne:
                     [self blueToolWriteValue:[NSString stringWithFormat:@"a05170000b"]];
